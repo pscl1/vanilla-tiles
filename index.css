@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.tile-container {
+
+    background-color: grey;
+    width: 100vw;
+    height: 100vh;
+}
+
+.tile {
+    border-radius: 10px;
+    position: absolute;
+    border: white 3px solid;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+
+    transition:all 1s cubic-bezier(0.310, 0.440, 0.445, 1.150);
+    transition-property: width, height, background-color, left, top;
+}
+
+.active-tile {
+    border-style: dashed;
+    transition-property: none;
+    z-index: 1000;
+}
+
+.tileText {
+    user-select: none
+}
